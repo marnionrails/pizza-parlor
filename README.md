@@ -1,19 +1,21 @@
-# _{Application Name}_
+# Marni's Pizza Parlor
 
-#### _{Brief description of application}_
+#### Pizza Parlor project for Epicodus, demonstrating usage of constructors and prototypes
 
-#### By _**{List of contributors}**_
+#### By **Marni Sucher**
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML/CSS
+* Markdown
+* JavaScript
+* jQuery
+* VS Code
+* Bootstrap
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+THis webpage allows users to order pizza from Marni's pizza parlor, selecting size of the pie and toppings. The cost of their order will be determined by the size and number of toppings.
 
 ## Setup/Installation Requirements
 
