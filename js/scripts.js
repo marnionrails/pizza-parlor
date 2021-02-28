@@ -26,11 +26,6 @@ Pizza.prototype.totalCost = function(size) {
   this.price = pizza.baseCost(size) + (.5 * numOfToppings);
 }
 
-/* let pizza = new Pizza();
-pizza.toppings = ["cheese", "pepperoni"];
-console.log(pizza.baseCost("8-inch"));
-pizza.totalCost(); */
-
 let pizza = new Pizza();
 $(document).ready(function() { 
   $("#pizza").submit(function(event) {

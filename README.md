@@ -15,7 +15,7 @@
 
 ## Description
 
-THis webpage allows users to order pizza from Marni's pizza parlor, selecting size of the pie and toppings. The cost of their order will be determined by the size and number of toppings.
+This webpage allows users to order pizza from Marni's pizza parlor, selecting size of the pie and toppings. The cost of their order will be determined by the size and number of toppings.
 
 ## Tests
 
@@ -48,8 +48,8 @@ Test 4: Describe(Pizza.totalCost())
 
 ## License
 
-This program uses the GPL license
+GPL Copyright 2021 Marni Sucher
 
 ## Contact Information
 
-Marni Sucher <suchermarni@gmai.com>
+Marni Sucher: <suchermarni@gmai.com>
