@@ -19,17 +19,22 @@ THis webpage allows users to order pizza from Marni's pizza parlor, selecting si
 
 ## Tests
 
-Test 1: Describe(Pizza.cost(size))
+Test 1: Describe(Pizza.baseCost(size))
         Test: "It will determine the price of a pizza based on size of 8-inch."
         Expect(pizza.cost("8-inch").toEqual(6));
 
-Test 2: Describe(Pizza.cost(size))
+Test 2: Describe(Pizza.baseCost(size))
         Test: "It will determine the price of a pizza based on size of 12-inch."
         Expect(pizza.cost("12-inch").toEqual(8));
 
 Test 3: Describe(Pizza.addToppings(topping))
         Test: "It will add a topping to the empty toppings array."
         Expect(pizza.addToppings("cheese").toEqual([cheese]))
+
+Test 4: Describe(Pizza.totalCost())
+        Test: "It will determine the prize of a pizza based on size and number of toppings." Set pizza.toppings = ["cheese", "pepperoni"]; 
+        Expect(pizza.totalCost().toEqual(7));
+
 
 
 
