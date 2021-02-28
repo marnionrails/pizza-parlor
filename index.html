@@ -14,10 +14,11 @@
     <h1>Marni's Pizza Parlor</h1>
   </div>
   <div class="container">
+    <img src="img/pizza.PNG" alt="pizza">
     <form id = "pizza">
       <label for = "name">Name: </label>
       <input type="text" id="name" name="name">
-
+      
       <h3>Choose pizza size</h3>
       <input type="radio" id="8-inch" name="size" value="8-inch">
       <label for="8-inch">8-inch ($6)</label>
@@ -36,18 +37,17 @@
       <input type="checkbox" id="spinach" name="topping" value="spinach">
       <label for="spinach">Spinach</label><br>
       <br>
-      <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-
+    
     <div id="output">
       <h3>Thank you, <span class="customer"></span>!</h3>
       <p><strong>Your order:</strong> <span class="show_size"></span> pizza</p>
       <p><strong>Total:</strong> $<span class="show_total"></span></p>
     </div>
     <div id="refresh">
-      <button id="reorder">New Order</button>
-    </div>
-    
+      <button id="reorder" class="btn btn-primary">New Order</button>
+    </div>   
   </div>
   
 </body>

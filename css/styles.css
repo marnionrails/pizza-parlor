@@ -1,9 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 211, 186);
+}
+
 #output {
   display: none;
-  float: right;
-  margin-right: 30%;
 }
 
 #refresh {
   display: none;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+img {
+  display: block;
+  float: right;
 }

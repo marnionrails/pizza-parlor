@@ -36,8 +36,6 @@ Test 4: Describe(Pizza.totalCost())
         Expect(pizza.totalCost().toEqual(7));
 
 
-
-
 ## Setup/Installation Requirements
 
 * Clone repository: https://github.com/marnionrails/pizza-parlor
