@@ -44,5 +44,7 @@ $(document).ready(function() {
     $(".customer").append(customer);
     $(".show_size").append(size_choice);
     $(".show_total").append(pizza.price);
+    $("#pizza").hide();
+    $("#output").show();
   });   
 });

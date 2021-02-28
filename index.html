@@ -15,7 +15,7 @@
   </div>
   <div class="container">
     <form id = "pizza">
-      <label for = "name">Name: </label><br>
+      <label for = "name">Name: </label>
       <input type="text" id="name" name="name">
 
       <h3>Choose pizza size</h3>
@@ -23,7 +23,7 @@
       <label for="8-inch">8-inch ($6)</label>
       <input type="radio" id="12-inch" name="size" value="12-inch">
       <label for="12-inch">12-inch ($8)</label>
-
+      
       <h3>Choose toppings ($0.50 each):</h3>
       <input type="checkbox" id="extra-cheese" name="topping" value="extra-cheese">
       <label for="extra-cheese">Extra Cheese</label><br>
@@ -38,12 +38,12 @@
       <br>
       <button type="submit" class="btn">Submit</button>
     </form>
-  </div>
-  
-  <div id="output">
-    <h3>Thank you, <span class="customer"></span>!</h3>
-    <p>Your order: <span class="show_size"></span> pizza</p><br>
-    <p>Total: $<span class="show_total"></span></p>
+
+    <div id="output">
+      <h3>Thank you, <span class="customer"></span>!</h3>
+      <p><strong>Your order:</strong> <span class="show_size"></span> pizza</p>
+      <p><strong>Total:</strong> $<span class="show_total"></span></p>
+    </div>
   </div>
   
 </body>
