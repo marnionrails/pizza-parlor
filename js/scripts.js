@@ -46,5 +46,9 @@ $(document).ready(function() {
     $(".show_total").append(pizza.price);
     $("#pizza").hide();
     $("#output").show();
-  });   
+    $("#refresh").show();
+  });
+  $("#reorder").click(function() {
+    window.location='/index.html';
+  });
 });
