@@ -17,12 +17,14 @@
     <form id = "pizza">
       <label for = "name">Name: </label><br>
       <input type="text" id="name" name="name">
+
       <h3>Choose pizza size</h3>
       <input type="radio" id="8-inch" name="size" value="8-inch">
-      <label for="8-inch">8-inch</label>
+      <label for="8-inch">8-inch ($6)</label>
       <input type="radio" id="12-inch" name="size" value="12-inch">
-      <label for="12-inch">12-inch</label>
-      <h3>Choose toppings:</h3>
+      <label for="12-inch">12-inch ($8)</label>
+
+      <h3>Choose toppings ($0.50 each):</h3>
       <input type="checkbox" id="extra-cheese" name="topping" value="extra-cheese">
       <label for="extra-cheese">Extra Cheese</label><br>
       <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
@@ -39,7 +41,7 @@
   </div>
   
   <div id="output">
-    <h3>Your order has been placed!</h3>
+    <h3>Thank you, <span class="customer"></span>!</h3>
     <p>Your order: <span class="show_size"></span> pizza</p><br>
     <p>Total: $<span class="show_total"></span></p>
   </div>
