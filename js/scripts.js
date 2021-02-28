@@ -31,11 +31,14 @@ pizza.toppings = ["cheese", "pepperoni"];
 console.log(pizza.baseCost("8-inch"));
 pizza.totalCost(); */
 
-
-$(document).ready(function() {
+let pizza = new Pizza();
+$(document).ready(function() { 
   $("#pizza").submit(function(event) {
-    event.preventDefault();
-    let pizza = new Pizza();
+    event.preventDefault(); 
     let size_choice = $("input[name='size']:checked").val();
-    
+    $.each($("input[name='topping']:checked"), function(){
+      pizza.addToppings($(this).val());
+    });
+    pizza.totalCost(size_choice);
+  });   
 });
