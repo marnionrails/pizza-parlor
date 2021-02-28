@@ -40,5 +40,7 @@ $(document).ready(function() {
       pizza.addToppings($(this).val());
     });
     pizza.totalCost(size_choice);
+    $(".show_size").append(size_choice);
+    $(".show_total").append(pizza.price);
   });   
 });
