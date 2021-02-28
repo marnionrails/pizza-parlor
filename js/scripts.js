@@ -16,8 +16,17 @@ Pizza.prototype.cost = function(size) {
 }
 
 let pizza = new Pizza();
-pizza.cost("12-inch");
+pizza.cost("something else");
 console.log(pizza.price);
+
+Pizza.prototype.addToppings = function(topping) { 
+    this.toppings.push(topping);
+  }
+
+pizza.addToppings("cheese");
+console.log(pizza.toppings);
+
+
 
 /* Pizza.prototype.cost(function() {
   

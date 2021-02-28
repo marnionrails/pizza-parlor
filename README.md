@@ -21,11 +21,15 @@ THis webpage allows users to order pizza from Marni's pizza parlor, selecting si
 
 Test 1: Describe(Pizza.cost(size))
         Test: "It will determine the price of a pizza based on size of 8-inch."
-        Expect(pizza.cost("8-inch").equal(6));
+        Expect(pizza.cost("8-inch").toEqual(6));
 
 Test 2: Describe(Pizza.cost(size))
         Test: "It will determine the price of a pizza based on size of 12-inch."
-        Expect(pizza.cost("12-inch").equal(8));
+        Expect(pizza.cost("12-inch").toEqual(8));
+
+Test 3: Describe(Pizza.addToppings(topping))
+        Test: "It will add a topping to the empty toppings array."
+        Expect(pizza.addToppings("cheese").toEqual([cheese]))
 
 
 
