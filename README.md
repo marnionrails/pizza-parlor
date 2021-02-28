@@ -20,8 +20,13 @@ THis webpage allows users to order pizza from Marni's pizza parlor, selecting si
 ## Tests
 
 Test 1: Describe(Pizza.cost(size))
-        Test: "It will return the size of the pizza object."
+        Test: "It will determine the price of a pizza based on size of 8-inch."
         Expect(pizza.cost("8-inch").equal(6));
+
+Test 2: Describe(Pizza.cost(size))
+        Test: "It will determine the price of a pizza based on size of 12-inch."
+        Expect(pizza.cost("12-inch").equal(8));
+
 
 
 ## Setup/Installation Requirements
