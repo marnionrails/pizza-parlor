@@ -4,6 +4,10 @@ function Pizza() {
   this.price = 0;
 }
 
+Pizza.prototype.addToppings = function(topping) { 
+  this.toppings.push(topping);
+}
+
 Pizza.prototype.baseCost = function(size) {
     this.size = size;
     if (this.size === "8-inch") {
@@ -17,26 +21,21 @@ Pizza.prototype.baseCost = function(size) {
   };
 
 
-Pizza.prototype.totalCost = function() {
+Pizza.prototype.totalCost = function(size) {
   let numOfToppings = this.toppings.length;
-  this.price = pizza.baseCost("8-inch") + (.5 * numOfToppings);
-  console.log(this.price);
+  this.price = pizza.baseCost(size) + (.5 * numOfToppings);
 }
 
-let pizza = new Pizza();
+/* let pizza = new Pizza();
 pizza.toppings = ["cheese", "pepperoni"];
 console.log(pizza.baseCost("8-inch"));
-pizza.totalCost();
+pizza.totalCost(); */
 
 
-  /* console.log(pizza.toppings);
-  console.log(pizza.price); */
-
-/* let pizza = new Pizza();
-pizza.cost("something else");
-console.log(pizza.price); */
-
-Pizza.prototype.addToppings = function(topping) { 
-    this.toppings.push(topping);
-  }
-
+$(document).ready(function() {
+  $("#pizza").submit(function(event) {
+    event.preventDefault();
+    let pizza = new Pizza();
+    let size_choice = $("input[name='size']:checked").val();
+    
+});
